@@ -1,18 +1,18 @@
 function imprimeNomeEmail(tipoCliente, agencia){
-    console.log(`
+   console.log(`
       ${tipoCliente} da agência ${agencia}:
       - nome: ${this.nome}, email: ${this.email}
-      `)
-   }
+   `)
+}
    
-   const cliente1 = {
-    nome: "Carlos",
-    email: "c@email.com"
-   }
+const cliente1 = {
+   nome: "Carlos",
+   email: "c@email.com"
+}
    
 const cliente2 = {
-nome: "Fred",
-email: "f@email.com"
+   nome: "Fred",
+   email: "f@email.com"
 }
 
 const clienteEspecial = ["cliente especial", "Rio de Janeiro"]
