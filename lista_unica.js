@@ -30,6 +30,13 @@ const clientes = [
     }
 ]
 
-// Spread operator (Operador de espalhamento) é usado para juntar 2 arrays em um só array
+// Spread operator (Operador de espalhamento) é utilizado para retornar os itens de um array ou objeto
+
+// Spread operator sendo usado para juntar 2 arrays em um só array
 const listaDependentes = [...clientes[0].dependentes, ...clientes[1].dependentes]
 console.table(listaDependentes);
+
+// Utilizando spread operator com forEach para juntar todos os dependentes em um só array 
+let dependentes = []
+clientes.forEach(client =>  dependentes.push(...client.dependentes))
+console.table(dependentes)
